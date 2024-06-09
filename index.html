@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control Web de Habitaciones Domotizadas</title>
+    <link rel="icon" href="icono_ies_hispanidad.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Añadir estilos CSS aquí si no quieres un archivo externo */
+    </style>
+</head>
+<body>
+    <h1>Control Web de Habitaciones Domotizadas</h1>
+    <div id="relojFecha"></div>
+    <div id="habitacion1">
+        <h2>Habitación 1</h2>
+        <div id="calefaccion1">
+            <h3>Calefacción</h3>
+            <img id="estadoCalefaccion1" src="calefaccion_off.png" alt="Calefacción OFF">
+            <button onclick="toggleCalefaccion1()">Interruptor Virtual</button>
+            <p>Activaciones: <span id="contadorCalefaccion1">0</span></p>
+            <button onclick="resetCalefaccion1()">Reset</button>
+        </div>
+        <div id="iluminacion1">
+            <h3>Iluminación</h3>
+            <img id="estadoIluminacion1" src="luz_off.png" alt="Luz OFF">
+            <button onclick="toggleIluminacion1()">Pulsador Virtual</button>
+            <p>Activaciones: <span id="contadorIluminacion1">0</span></p>
+            <button onclick="resetIluminacion1()">Reset</button>
+        </div>
+    </div>
+    <div id="habitacion2">
+        <h2>Habitación 2</h2>
+        <div id="calefaccion2">
+            <h3>Calefacción</h3>
+            <img id="estadoCalefaccion2" src="calefaccion_off.png" alt="Calefacción OFF">
+            <button onclick="toggleCalefaccion2()">Interruptor Virtual</button>
+            <p>Activaciones: <span id="contadorCalefaccion2">0</span></p>
+            <button onclick="resetCalefaccion2()">Reset</button>
+        </div>
+        <div id="iluminacion2">
+            <h3>Iluminación</h3>
+            <img id="estadoIluminacion2" src="luz_off.png" alt="Luz OFF">
+            <button onclick="toggleIluminacion2()">Pulsador Virtual</button>
+            <p>Activaciones: <span id="contadorIluminacion2">0</span></p>
+            <button onclick="resetIluminacion2()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
